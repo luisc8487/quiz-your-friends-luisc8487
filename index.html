@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <h1>What type of Trader are You?</h1>
+    <form>
+        <fieldset>
+            <fieldset>
+                <legend>Info</legend>
+                <input class='fname' type="text" name="fname" placeholder="First Name" required />
+                <input class='lname' type="text" name="lname" placeholder="Last Name" required />
+                <input class="email" type="text" name="email" placeholder="Email" required />
+            </fieldset>
+
+
+            <p><strong>SwingTrader</strong> - buy or sell assets over a period of a few days to several weeks</p>
+            <p><strong>DayTrader</strong> - buy or sell assets within the same day</p>
+            <p><strong>Scalper</strong> - is a trading style that specializes in profiting off of small price changes and making a fast profit off reselling</p>
+
+
+            <fieldset>
+                <legend>Objective(s)</legend>
+                <section>
+                    <label for="fname">What is your style?</label>
+                    <select id="styletrader" name="styletrader">
+                        <option value="SwingTrader">SwingTrader</option>
+                        <option value="DayTrader">DayTrader</option>
+                        <option value="Scalper">Scalper</option>
+                    </select>
+                </section>
+
+                <section>
+                    <label for="trades">How many trades you want to take per week?</label>
+                    <input type="number" name="trades" step="1" min='1' max='5' required />
+                </section>
+
+                <section>
+                    <label for="country">What country do you live in?</label>
+                    <select id="country">
+                        <option value="Spain">Spain</option>
+                        <option value="United States">United States</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Russia">Russia</option>
+                    </select>
+                </section>
+
+                <section>
+                    <p>What Broker you want to apply for:</p>
+                        <label class="inline" for="hughsway">Hughsway</label>
+                        <input class="inline" id="hughsway" name="hughsway" type="checkbox" value="hughsway">
+                        <label class="inline" for="fxtrader">FxTrader</label>
+                        <input class="inline" id="fxtrader" name="fxtrader" type="checkbox" value="fxtrader">
+                        <label class="inline" for="kot4x">Kot4x</label>
+                        <input class="inline" id="kot4x" name="kot4x" type="checkbox" value="kot4x">
+                </section>
+                
+                <section>
+                    <p>Are you at least <strong>18 years old?</strong></p>
+                    <label class="inline" for="yes">Yes</label>
+                    <input class="inline" type="radio" id="yes" value="yes">
+                    <label class="inline" for="no">No</label>
+                    <input  class="inline" type="radio" id="no" value="no">
+                </section>
+
+                <label for="message">Message Me:</label>
+                <textarea id="message" name="message" rows="5" cols="30" placeholder="Type here"></textarea>
+            </fieldset>
+            <br>
+
+            <input type="submit" value="Submit" />
+        </fieldset>
+    </form>
+</body>
+
+</html>

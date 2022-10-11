@@ -1,0 +1,17 @@
+section{
+    margin-bottom:10px;
+    margin-top:10px;
+}
+input{
+    display: block;
+}
+label{
+    display: block;
+}
+.fname, .lname, .email{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.inline{
+    display: inline-block;
+}
